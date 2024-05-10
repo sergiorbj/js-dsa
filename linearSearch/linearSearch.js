@@ -6,7 +6,6 @@ const linearSearch = (array, target) => {
     const curr = array[i];
     if (curr === target) {
       return true;
-      break;
     }
   }
 
