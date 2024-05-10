@@ -1,2 +1,20 @@
 # js-dsa
-DSA concepts through javascript functions
+
+DSA concepts through javascript functions.
+
+## Functions
+
+- linearSearch
+- binarySearch
+
+## Install
+
+`npm i`
+
+## How to test
+
+Test all functions ->
+`npm run test`
+
+Test specific function ->
+`npm run test:function <FUNCTION_NAME>`

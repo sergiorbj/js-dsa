@@ -1,0 +1,32 @@
+{
+  "name": "js-dsa",
+  "version": "1.0.0",
+  "description": "DSA concepts through javascript functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:function": "jest --testNamePattern=$@"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioRBJ/js-dsa.git"
+  },
+  "author": "Sergio Bernardi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SergioRBJ/js-dsa/issues"
+  },
+  "homepage": "https://github.com/SergioRBJ/js-dsa#readme",
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/*.test.js"
+    ]
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
