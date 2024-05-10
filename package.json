@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "DSA concepts through javascript functions",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest",
-    "test:function": "jest --testNamePattern=$@"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:function": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testNamePattern=$@"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,8 @@
     "testEnvironment": "node",
     "testMatch": [
       "**/*.test.js"
-    ]
+    ],
+    "transform": {}
   },
   "engines": {
     "node": ">=18"
