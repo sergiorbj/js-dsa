@@ -6,6 +6,7 @@ DSA concepts through javascript functions.
 
 - linearSearch
 - binarySearch
+- sumUnique
 
 ## Install
 
