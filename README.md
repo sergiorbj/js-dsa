@@ -4,9 +4,11 @@ DSA concepts through javascript functions.
 
 ## Functions
 
-- linearSearch
 - binarySearch
+- bookstoreDiscount
+- linearSearch
 - sumUnique
+- sumRepeated
 
 ## Install
 
