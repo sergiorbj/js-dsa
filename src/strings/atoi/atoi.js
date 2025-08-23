@@ -27,7 +27,6 @@ function atoi(s) {
     while(index < s.length && s[index] >= "0" && s[index] <= "9") {
         const digit = s[index] - "0"
 
-
         // Handle overflow scenarios
         if(result > Math.floor(INT_MAX / 10) || (result === Math.floor(INT_MAX / 10) && digit > INT_MAX % 10)){
             return sign === 1 ? INT_MAX : INT_MIN
