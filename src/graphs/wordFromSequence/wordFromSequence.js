@@ -13,29 +13,29 @@
  * Result: S → P → A → I → N = "SPAIN"
  */
 
-function wordSequence(sequence) {
+function wordFromSequence(sequence) {
 
     const map = new Map()
 
-    for(const pointer of sequence){
-        const [from,to] = pointer.split(">")
-        map.set(from, to)
+    for(const currentSequence of sequence){
+        const [from, to] = currentSequence.split('>')
+        map.set(from,to)
     }
 
     const origins = [...map.keys()]
     const destinations = [...map.values()]
 
-    let firstLetter = origins.find(letter => !destinations.includes(letter))
-    
-    let word = firstLetter
-    let current = firstLetter
+    const firstLetter = origins.find(letter => !destinations.includes(letter))
 
-    while(map.has(current)){
-        current = map.get(current)
-        word += current
+    let word = firstLetter
+    let currentLetter = firstLetter
+
+    while(map.has(currentLetter)){
+        currentLetter = map.get(currentLetter)
+        word += currentLetter
     }
 
     return word
 }
 
-export { wordSequence };
+export { wordFromSequence };
